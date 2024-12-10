@@ -28,7 +28,7 @@ async def set_text(event):
 
 @client.on(events.NewMessage(pattern=r'\.help', outgoing=True))
 async def help(event):
-    await event.respond(f".setkd kd - установить задержку\n.start - начать спам в чат\n.settext txt - установить текст для спама\n.help - эта каманда бро\nхлопчик в трусиках @xidlys")
+    await event.respond(f".setkd kd - установить задержку\n.start - начать спам в чат\n.settext txt - установить текст для спама\n.help - эта каманда бро")
 
 @client.on(events.NewMessage(pattern=r'\.setkd (\d+)', outgoing=True))
 async def set_kd(event):
